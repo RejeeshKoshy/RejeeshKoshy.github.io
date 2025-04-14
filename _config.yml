@@ -1,9 +1,21 @@
-title: CyberSecPath
-tagline: "Exploring the depths of cybersecurity: Learn, Build, Secure."
-description: A personal blog documenting my journey into cybersecurity, tech, and projects.
-author: Your Name
-theme: jekyll-theme-cayman  # or change to 'minimal', 'midnight', etc.
+title: The Stack Journal
+description: Exploring the depths of tech—code, security, and systems.
+theme: minima
+baseurl: "" # leave empty for user.github.io repo, else set as "/repo-name"
+url: "https://yourusername.github.io"
 
-# Optional extras:
-show_downloads: false
 markdown: kramdown
+permalink: pretty
+
+# Navigation links
+header_pages:
+  - index.md
+
+# Social links (optional)
+email: your@email.com
+linkedin_username: yourlinkedin
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
