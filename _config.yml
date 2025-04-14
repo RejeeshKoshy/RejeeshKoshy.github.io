@@ -1,7 +1,6 @@
 title: The Stack Journal
 description: Exploring the depths of tech—code, security, and systems.
 theme: minima
-baseurl: "/repo-name" 
 url: "https://rejeeshkoshy.github.io"
 
 markdown: kramdown
