@@ -1,34 +1,39 @@
 title: The Stack Journal
 description: Exploring the depths of tech—code, security, and systems.
-baseurl: "" # leave this empty if you're publishing to username.github.io
-url: "https://rejeeshkoshy.github.io" # replace with your actual GitHub Pages URL
+baseurl: "" 
+url: "https://rejeeshkoshy.github.io"
 
 theme: minima
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/
 
-# Plugins (optional, but useful)
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+collections:
+  blog:
+    output: true
+  projects:
+    output: true
 
-# Optional: turn off markdown-based homepage
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: "blog"
     values:
-      layout: null
+      layout: default
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
 
-# Navigation links (can be used if you want links at top)
-header_pages:
-  # Leave empty or comment out if you're using pure HTML landing
-  # - blog.md
-  # - projects.md
-
-# Social links (optional metadata)
-email: your@email.com
-linkedin_username: yourlinkedin
+# Plugins 
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Build settings
 exclude:
