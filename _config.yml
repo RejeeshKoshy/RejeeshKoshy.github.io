@@ -1,8 +1,8 @@
 title: The Stack Journal
 description: Exploring the depths of tech—code, security, and systems.
 theme: minima
-baseurl: "" # leave empty for user.github.io repo, else set as "/repo-name"
-url: "https://yourusername.github.io"
+baseurl: "" 
+url: "https://rejeeshkoshy.github.io"
 
 markdown: kramdown
 permalink: pretty
@@ -11,9 +11,9 @@ permalink: pretty
 header_pages:
   - index.md
 
-# Social links (optional)
-email: your@email.com
-linkedin_username: yourlinkedin
+# Social links 
+email: rejeeshkoshy10@email.com
+linkedin_username: Rejeesh Koshy
 
 # Build settings
 plugins:
