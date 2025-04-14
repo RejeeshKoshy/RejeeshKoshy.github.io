@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding Zero Trust Architecture</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <div class="container">
+      <h1>The Stack Journal</h1>
+      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/">Resume</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Understanding Zero Trust Architecture</h2>
+      <p class="meta">Published: Apr 5, 2025 · Tags: Security, Architecture</p>
+
+      <p>Zero Trust Architecture (ZTA) is a modern security model based on the principle of "never trust, always verify." Instead of assuming that users or devices inside a network are trustworthy, ZTA treats every access request as potentially malicious...</p>
+
+      <h3>Core Principles</h3>
+      <ul>
+        <li>Continuous verification</li>
+        <li>Least privilege access</li>
+        <li>Assume breach</li>
+      </ul>
+
+      <p>Implementing ZTA involves identity management, micro-segmentation, monitoring, and policy enforcement. In this post, we’ll dive into real-world examples and tools for building Zero Trust systems.</p>
+
+      <p><a href="/blog/">← Back to all posts</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 The Stack Journal. Licensed under 
+        <a href="https://opensource.org/licenses/MIT">MIT</a> and 
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleTheme = () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    };
+    window.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    });
+  </script>
+</body>
+</html>

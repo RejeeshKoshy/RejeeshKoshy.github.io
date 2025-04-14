@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume | The Stack Journal</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <!-- Reusable Header -->
+  <div id="header-placeholder"></div>
+
+  <main class="container">
+    <section class="resume">
+      <h2>📄 My Resume</h2>
+      <!-- Resume Sections (same as before) -->
+      <section class="profile">
+        <h3>About Me</h3>
+        <p>Hello, I’m a cybersecurity expert, software developer, and tech enthusiast...</p>
+      </section>
+      <section class="experience">
+        <h3>💼 Experience</h3>
+        <ul>
+          <li>
+            <h4>Senior Security Engineer | TechCorp</h4>
+            <p><strong>Jan 2023 - Present</strong></p>
+            <p>Leading security initiatives across the organization...</p>
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h3>🛠️ Skills</h3>
+        <ul>
+          <li>Penetration Testing</li>
+          <li>Firewall Configuration</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <!-- Reusable Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load header and footer from external files
+    document.getElementById('header-placeholder').innerHTML = `
+      <!-- Include header HTML here -->
+      ${fetch('/assets/includes/header.html').then(response => response.text())}
+    `;
+    document.getElementById('footer-placeholder').innerHTML = `
+      <!-- Include footer HTML here -->
+      ${fetch('/assets/includes/footer.html').then(response => response.text())}
+    `;
+  </script>
+</body>
+</html>

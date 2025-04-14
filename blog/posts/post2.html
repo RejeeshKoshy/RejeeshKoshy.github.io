@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Building a Personal Firewall from Scratch</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <div class="container">
+      <h1>The Stack Journal</h1>
+      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/">Resume</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Building a Personal Firewall from Scratch</h2>
+      <p class="meta">Published: Mar 28, 2025 · Tags: Coding, Networking</p>
+
+      <p>Firewalls are fundamental to any secure system, but building one yourself is one of the best ways to understand how traffic filtering and packet inspection really work.</p>
+
+      <h3>Why Build One?</h3>
+      <p>Most people rely on default OS firewalls or cloud firewalls, but creating a custom one helps you:</p>
+      <ul>
+        <li>Learn how packet filtering works</li>
+        <li>Understand protocol behavior (TCP/UDP)</li>
+        <li>Get hands-on with tools like `iptables`, `nftables`, or raw sockets in C/Python</li>
+      </ul>
+
+      <h3>Approach</h3>
+      <p>We’ll build a basic packet sniffer first using Python’s <code>socket</code> module, then start filtering packets based on rules like IP, port, and protocol. You’ll also learn how to create logging systems and dynamic rulesets.</p>
+
+      <p>In future posts, we’ll explore kernel-level filtering and how to secure against common attacks like SYN floods and port scans.</p>
+
+      <p><a href="/blog/">← Back to all posts</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 The Stack Journal. Licensed under 
+        <a href="https://opensource.org/licenses/MIT">MIT</a> and 
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleTheme = () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    };
+    window.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | The Stack Journal</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <div class="container">
+      <h1>The Stack Journal</h1>
+      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/">Resume</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>📝 All Blog Posts</h2>
+    <ul class="card-list">
+      <li class="card">
+        <a href="/blog/posts/post1.html">
+          <h3>Understanding Zero Trust Architecture</h3>
+          <p class="meta">Apr 5, 2025 · Security · Architecture</p>
+          <p>Why Zero Trust is more than a buzzword and how to adopt it in modern infrastructure.</p>
+        </a>
+      </li>
+      <li class="card">
+        <a href="/blog/posts/post2.html">
+          <h3>Building a Personal Firewall from Scratch</h3>
+          <p class="meta">Mar 28, 2025 · Coding · Networking</p>
+          <p>A deep dive into packet inspection, IP tables, and creating a simple Linux firewall.</p>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 The Stack Journal. Licensed under 
+        <a href="https://opensource.org/licenses/MIT">MIT</a> and 
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleTheme = () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+    };
+    window.addEventListener("DOMContentLoaded", () => {
+      const saved = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    });
+  </script>
+</body>
+</html>
