@@ -1,8 +1,3 @@
-# The Stack Journal
-_Exploring the depths of tech—code, security, and systems._
-
----
-
 ## 📌 About
 **The Stack Journal** is a personal blog where I share insights, ideas, and learnings from the ever-evolving world of computing and IT. This platform serves as a digital journal for my:
 
@@ -41,10 +36,3 @@ I regularly learn through:
 - **Courses**: Coursera, edX, Udemy, and more  
 - **Books**: From foundational texts to bleeding-edge reads  
 - **Hands-on Labs**: TryHackMe, Hack The Box, and DIY setups
-
----
-
-## 📬 Contact
-Have suggestions, feedback, or want to connect?  
-📧 [Send a mail](mailto:rejeeshkoshy10@gmail.com)  
-💼 [View profile on Linkedln](www.linkedin.com/in/rejeesh-koshy)
