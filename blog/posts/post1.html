@@ -3,44 +3,224 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Understanding Zero Trust Architecture</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <title>CyberSec Perspective: Sepoy Mutiny</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    :root {
+      --bg: #f9f9f9;
+      --text: #111;
+      --accent: #4fc3f7;
+      --card-bg: #fff;
+      --border: #ddd;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #eaeaea;
+      --accent: #82d1ff;
+      --card-bg: #1e1e1e;
+      --border: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #f39c12;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: gray;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+    }
+
+    table th,
+    table td {
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f0f0f0;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #f0f4f8;
+      border-left: 5px solid var(--accent);
+      font-style: italic;
+      color: #333;
+    }
+
+    ul {
+      margin: 0.5rem 0 1.5rem 1.25rem;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
   <header>
     <div class="container">
       <h1>The Stack Journal</h1>
-      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
       <nav>
         <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/projects/">Projects</a>
-        <a href="/resume/">Resume</a>
         <a href="/about.html">About</a>
+        <a href="/resume/">Resume</a>
+        <a href="/blog/">Blog</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+      <!--Content goes in here-->
     <article>
-      <h2>Understanding Zero Trust Architecture</h2>
-      <p class="meta">Published: Apr 5, 2025 · Tags: Security, Architecture</p>
+      <h2>Operation/Event: Sepoy Mutiny (Indian Rebellion of 1857)</h2>
+      <p class="meta">Published: Apr 15, 2025 · Tags: Relations, Strategy, Intel, High Priority</p>
 
-      <p>Zero Trust Architecture (ZTA) is a modern security model based on the principle of "never trust, always verify." Instead of assuming that users or devices inside a network are trustworthy, ZTA treats every access request as potentially malicious...</p>
+      <h3>Year/Timeline</h3>
+      <p>1857–1858</p>
 
-      <h3>Core Principles</h3>
+      <h3>Countries Involved</h3>
       <ul>
-        <li>Continuous verification</li>
-        <li>Least privilege access</li>
-        <li>Assume breach</li>
+        <li>India (under British East India Company rule)</li>
+        <li>United Kingdom</li>
+        <li>Indirectly: Mughal remnants, local princely states</li>
       </ul>
 
-      <p>Implementing ZTA involves identity management, micro-segmentation, monitoring, and policy enforcement. In this post, we’ll dive into real-world examples and tools for building Zero Trust systems.</p>
+      <h3>Strategic Tactics Used</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Side</th>
+            <th>Tactics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rebels</strong></td>
+            <td>Surprise attacks, use of local forts, rapid mobilization, symbolic leadership (e.g., reinstating Bahadur Shah Zafar as emperor)</td>
+          </tr>
+          <tr>
+            <td><strong>British</strong></td>
+            <td>Divide-and-conquer, scorched-earth retaliation, use of superior logistics, and railways for troop movement</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <blockquote>
+        The rebels reminded me of modern-day hacktivist collectives—acting independently but united by shared outrage. Their lack of coordination mirrored the weaknesses of loosely organized threat actor groups like Anonymous or early cyber rebellions.
+      </blockquote>
+
+      <h3>Cyber Equivalent</h3>
+      <ul>
+        <li><strong>Rebels =</strong> Decentralized Hacktivist Cells driven by shared sentiment</li>
+        <li><strong>British =</strong> Centralized Response System: Leveraged superior comms, logistics (like a centralized firewall with real-time monitoring)</li>
+      </ul>
+
+      <h3>Intel/Recon Methods</h3>
+      <p>The British leaned heavily on:</p>
+      <ul>
+        <li>Local informants (early HUMINT)</li>
+        <li>Monitoring of letters and rumor mills</li>
+        <li>Telegraph lines for fast decision-making</li>
+      </ul>
+
+      <h3>Cyber Mapping</h3>
+      <ul>
+        <li>Tactics parallel phishing and social engineering, where early detection relies on insider leaks</li>
+        <li>Telegraph = a rudimentary DNS or command center for info control</li>
+      </ul>
+
+      <blockquote>
+        "The telegraph allowed the British to crush local uprisings before they escalated." That’s a direct parallel to modern SIEM tools detecting breaches before lateral movement begins.
+      </blockquote>
+
+      <h3>Outcome/Impact</h3>
+      <ul>
+        <li>Uprising was crushed, but it <strong>shook the British empire</strong></li>
+        <li>Led to <strong>dissolution of East India Company</strong></li>
+        <li>Crown rule established → Rise of direct colonial governance</li>
+        <li>Start of <strong>systematic monitoring and intelligence structuring</strong> in India (early roots of IB and RAW-type frameworks)</li>
+      </ul>
 
       <p><a href="/blog/">← Back to all posts</a></p>
     </article>
+    <!--Content ends here-->
   </main>
 
   <footer>
@@ -51,18 +231,5 @@
       </p>
     </div>
   </footer>
-
-  <script>
-    const toggleTheme = () => {
-      const current = document.documentElement.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-    };
-    window.addEventListener("DOMContentLoaded", () => {
-      const saved = localStorage.getItem("theme") || "light";
-      document.documentElement.setAttribute("data-theme", saved);
-    });
-  </script>
 </body>
 </html>

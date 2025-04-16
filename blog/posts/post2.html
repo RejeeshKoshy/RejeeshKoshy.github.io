@@ -3,70 +3,234 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Building a Personal Firewall from Scratch</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-</head>
-<body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <title>CyberSec Perspective: Sepoy Mutiny</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    :root {
+      --bg: #f9f9f9;
+      --text: #111;
+      --accent: #4fc3f7;
+      --card-bg: #fff;
+      --border: #ddd;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #eaeaea;
+      --accent: #82d1ff;
+      --card-bg: #1e1e1e;
+      --border: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #f39c12;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: gray;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+    }
+
+    table th,
+    table td {
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f0f0f0;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #f0f4f8;
+      border-left: 5px solid var(--accent);
+      font-style: italic;
+      color: #333;
+    }
+
+    ul {
+      margin: 0.5rem 0 1.5rem 1.25rem;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
   <header>
     <div class="container">
       <h1>The Stack Journal</h1>
-      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
       <nav>
         <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/projects/">Projects</a>
-        <a href="/resume/">Resume</a>
         <a href="/about.html">About</a>
+        <a href="/resume/">Resume</a>
+        <a href="/blog/">Blog</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <article>
-      <h2>Building a Personal Firewall from Scratch</h2>
-      <p class="meta">Published: Mar 28, 2025 · Tags: Coding, Networking</p>
+      <!--Content goes in here-->
+      <article>
+        <h2>Operation/Event: Salt March (Dandi March)</h2>
+        <p class="meta">Published: Apr 16, 2025 · Tags: Relations, Strategy, Intel, High Priority</p>
+      
+        <h3>Year/Timeline</h3>
+        <p>March–April 1930</p>
+      
+        <h3>Countries Involved</h3>
+        <ul>
+          <li>India (under British colonial rule)</li>
+          <li>United Kingdom</li>
+        </ul>
+      
+        <h3>Strategic Tactics Used</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Side</th>
+              <th>Tactics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Gandhi &amp; Congress</strong></td>
+              <td>Symbolic resistance, non-violent civil disobedience, grassroots mobilization, leveraging the press</td>
+            </tr>
+            <tr>
+              <td><strong>British</strong></td>
+              <td>Censorship, selective arrests, legal intimidation, surveillance of key figures</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <blockquote>
+          What stands out here is how <em>calculated</em> Gandhi’s symbolism was. He wasn’t just walking to Dandi—he was staging a slow, deliberate awakening. It's like how security researchers leak zero-days in a controlled manner to provoke patching and policy reform.
+        </blockquote>
+      
+        <h3>Cyber Equivalent</h3>
+        <ul>
+          <li><strong>Ethical hacker with a megaphone</strong> — exposed system flaws (salt tax) to provoke policy reform</li>
+          <li><strong>British = Authoritarian firewall</strong> — tried to throttle and contain the spread, but the ‘exploit’ was public and unstoppable</li>
+        </ul>
+      
+        <h3>Intel/Recon Methods</h3>
+        <p>The British tried to monitor:</p>
+        <ul>
+          <li>Gandhi’s route and public meetings</li>
+          <li>Ashram activity, printed leaflets, and telegram exchanges</li>
+          <li>Rural influencers who might amplify the message</li>
+        </ul>
+      
+        <h3>Cyber Mapping</h3>
+        <ul>
+          <li>Gandhi’s march was like an <strong>open-source protest movement</strong>—transparent, traceable, but impossible to stop without backlash</li>
+          <li>British attempts to suppress it = <strong>content filtering and ISP-level censorship</strong></li>
+        </ul>
+      
+        <blockquote>
+          "<em>By picking salt—a daily necessity—Gandhi forced even the apolitical into awareness.</em>"<br>
+          This is a great lesson in targeting the right vulnerability—he didn’t go after the biggest issue, but the most relatable one.
+        </blockquote>
+      
+        <h3>Outcome/Impact</h3>
+        <ul>
+          <li><strong>Global attention to India’s freedom movement</strong></li>
+          <li>British lost moral ground internationally</li>
+          <li>Led to <strong>Gandhi-Irwin Pact</strong> and participation in the Round Table Conferences</li>
+          <li>Proved <strong>nonviolent defiance could bypass traditional intelligence and military control</strong></li>
+        </ul>
+      
+        <p><a href="/blog/">← Back to all posts</a></p>
+      </article>
+    <!--Content ends here-->
+    </main>
 
-      <p>Firewalls are fundamental to any secure system, but building one yourself is one of the best ways to understand how traffic filtering and packet inspection really work.</p>
-
-      <h3>Why Build One?</h3>
-      <p>Most people rely on default OS firewalls or cloud firewalls, but creating a custom one helps you:</p>
-      <ul>
-        <li>Learn how packet filtering works</li>
-        <li>Understand protocol behavior (TCP/UDP)</li>
-        <li>Get hands-on with tools like `iptables`, `nftables`, or raw sockets in C/Python</li>
-      </ul>
-
-      <h3>Approach</h3>
-      <p>We’ll build a basic packet sniffer first using Python’s <code>socket</code> module, then start filtering packets based on rules like IP, port, and protocol. You’ll also learn how to create logging systems and dynamic rulesets.</p>
-
-      <p>In future posts, we’ll explore kernel-level filtering and how to secure against common attacks like SYN floods and port scans.</p>
-
-      <p><a href="/blog/">← Back to all posts</a></p>
-    </article>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 The Stack Journal. Licensed under 
-        <a href="https://opensource.org/licenses/MIT">MIT</a> and 
-        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-      </p>
-    </div>
-  </footer>
-
-  <script>
-    const toggleTheme = () => {
-      const current = document.documentElement.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-    };
-    window.addEventListener("DOMContentLoaded", () => {
-      const saved = localStorage.getItem("theme") || "light";
-      document.documentElement.setAttribute("data-theme", saved);
-    });
-  </script>
+    <footer>
+        <div class="container">
+            <p>© 2025 The Stack Journal. Licensed under 
+            <a href="https://opensource.org/licenses/MIT">MIT</a> and 
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
+    

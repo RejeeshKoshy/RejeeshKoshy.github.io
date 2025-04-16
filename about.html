@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog | The Stack Journal</title>
+  <title>About | The Stack Journal</title>
 
   <style>
     /* Base Reset & Typography */
@@ -64,12 +64,6 @@
       font-size: 1.8rem;
     }
 
-    .tagline {
-      font-size: 1rem;
-      color: #aaa;
-      font-style: italic;
-    }
-
     header nav {
       display: flex;
       gap: 1.5rem;
@@ -89,53 +83,18 @@
     }
 
     h2 {
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
 
-    .meta {
-      font-size: 0.9rem;
-      color: gray;
-      margin: 0.2rem 0 0.5rem;
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
     }
 
-    .card-list {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      padding: 1rem 1.5rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-    }
-
-    .card h3 {
-      margin-bottom: 0.3rem;
-      color: var(--accent);
-    }
-
-    .card a {
-      color: inherit;
-      text-decoration: none;
-      display: block;
-    }
-
-    footer {
-      background: var(--card-bg);
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border);
+    p {
+      margin-bottom: 1rem;
     }
 
     a {
@@ -146,52 +105,46 @@
       text-decoration: underline;
     }
 
-    @media (min-width: 600px) {
-      .card-list {
-        grid-template-columns: 1fr 1fr;
-      }
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
     }
   </style>
 </head>
-
 <body>
 
   <header>
     <div class="container">
       <h1>The Stack Journal</h1>
-      <p class="tagline">Exploring tech, cybersecurity, and beyond.</p>
       <nav>
         <a href="/">Home</a>
-        <a href="/blog/">Blog</a>
-        <a href="/projects/">Projects</a>
-        <a href="/resume/">Resume</a>
         <a href="/about.html">About</a>
+        <a href="/resume/">Resume</a>
+        <a href="/blog/">Blog</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h2>📝 All Blog Posts</h2>
-    <ul class="card-list">
-      <!--Blog Posts goes in here-->
-      <li class="card">
-        <a href="/blog/posts/post1.html">
-          <h3>CyberSec Perspective: Sepoy Mutiny</h3>
-          <p class="meta">Apr 15, 2025 · History · Strategy</p>
-          <p>How the first decentralized uprising in 1857 resembled modern hacktivist disruptions — and how the British used early intelligence to crush it.</p>
-        </a>
-      </li>
-      
-      <li class="card">
-        <a href="/blog/posts/post2.html">
-          <h3>CyberSec Perspective: Salt March</h3>
-          <p class="meta">Apr 16, 2025 · History · Strategy</p>
-          <p>Gandhi’s peaceful march exposed systemic flaws like a public exploit, while the British scrambled to contain it with censorship and arrests.</p>
-        </a>
-      </li>
-      
-      <!--Blog Posts ends here-->
-    </ul>
+    <h2>👋 About Me</h2>
+    <p>Hello! I’m a cybersecurity enthusiast, system tinkerer, and software explorer based somewhere between packets and ports. I built The Stack Journal as a space to explore cyber strategy, architecture, detection, and coding analogies rooted in historical and real-world parallels.</p>
+    <p>When I’m not researching threat actor behaviors or building detection maps, I’m probably rewatching a Cold War documentary, reverse-engineering an old tool, or thinking in C and Java.</p>
+    <p>If you're curious about my experience or skill set, feel free to <a href="/resume/">check out my resume</a>.</p>
+
+    <h3>📫 Contact</h3>
+    <div class="contact-links">
+      <a href="mailto:rejeeshkoshy10@gmail.com">📧 rejeeshkoshy10gmail.com</a>
+      <a href="https://www.linkedin.com/in/rejeeshkoshy/" target="_blank">🔗 LinkedIn Profile</a>
+    </div>
   </main>
 
   <footer>
@@ -202,6 +155,6 @@
       </p>
     </div>
   </footer>
-  
+
 </body>
 </html>

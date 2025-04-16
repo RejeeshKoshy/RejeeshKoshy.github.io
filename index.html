@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
   <header>
     <div class="container">
       <h1>The Stack Journal</h1>
@@ -17,7 +16,6 @@
         <a href="/about.html">About</a>
         <a href="/resume/">Resume</a>
         <a href="/blog/">Blog</a>
-        <a href="/projects/">Projects</a>
       </nav>
     </div>
   </header>
@@ -27,45 +25,30 @@
       <h2>Welcome</h2>
       <p>This is my digital space where I write about cybersecurity, tech trends, and passion projects. Check out recent blog posts or explore my latest work below.</p>
     </section>
-
+    <!--Latest Blog Post goes in here-->
     <section class="latest">
       <h2>📝 Latest Blog Posts</h2>
       <ul class="card-list">
         <li class="card">
-          <a href="/blog/posts/post1.html">
-            <h3>Understanding Zero Trust Architecture</h3>
-            <p class="meta">Apr 5, 2025 · Security · Architecture</p>
-            <p>Why Zero Trust is more than a buzzword and how to adopt it in modern infrastructure.</p>
-          </a>
-        </li>
-        <li class="card">
           <a href="/blog/posts/post2.html">
-            <h3>Building a Personal Firewall from Scratch</h3>
-            <p class="meta">Mar 28, 2025 · Coding · Networking</p>
-            <p>A deep dive into packet inspection, IP tables, and creating a simple Linux firewall.</p>
+            <h3>CyberSec Perspective: Salt March</h3>
+            <p class="meta">Apr 16, 2025 · History · Strategy</p>
+            <p>Gandhi’s peaceful march exposed systemic flaws like a public exploit, while the British scrambled to contain it with censorship and arrests.</p>
           </a>
         </li>
+
+        <li class="card">
+          <a href="/blog/posts/post1.html">
+            <h3>CyberSec Perspective: Sepoy Mutiny</h3>
+            <p class="meta">Apr 15, 2025 · History · Strategy</p>
+            <p>How the first decentralized uprising in 1857 resembled modern hacktivist disruptions — and how the British used early intelligence to crush it.</p>
+          </a>
+        </li>
+                
       </ul>
       <p><a href="/blog/">See all posts →</a></p>
     </section>
-
-    <section class="projects">
-      <h2>💼 Featured Projects</h2>
-      <ul class="card-list">
-        <li class="card">
-          <a href="/projects/">
-            <h3>Secure File Transfer System</h3>
-            <p>A fully encrypted file transfer tool built with Go and AES-256 encryption.</p>
-          </a>
-        </li>
-        <li class="card">
-          <a href="/projects/">
-            <h3>AI-based Log Analyzer</h3>
-            <p>A machine learning-powered tool to detect anomalies in security logs in real time.</p>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <!--Latest blog posts ends here-->
   </main>
 
   <footer>
