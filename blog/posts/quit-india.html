@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberSec Perspective: Sepoy Mutiny</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    :root {
+      --bg: #f9f9f9;
+      --text: #111;
+      --accent: #4fc3f7;
+      --card-bg: #fff;
+      --border: #ddd;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #eaeaea;
+      --accent: #82d1ff;
+      --card-bg: #1e1e1e;
+      --border: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #f39c12;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: gray;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      border: 1px solid var(--border);
+    }
+
+    table th,
+    table td {
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f0f0f0;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #f0f4f8;
+      border-left: 5px solid var(--accent);
+      font-style: italic;
+      color: #333;
+    }
+
+    ul {
+      margin: 0.5rem 0 1.5rem 1.25rem;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>The Stack Journal</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/resume/">Resume</a>
+        <a href="/blog/">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+      <!--Content goes in here-->
+      <article>
+        <h2>Operation/Event: Quit India Movement</h2>
+        <p class="meta">Published: Apr 17, 2025 · Tags: Strategy, Intel, High Priority</p>
+      
+        <h3>Year/Timeline</h3>
+        <p>August 1942 – 1944</p>
+      
+        <h3>Countries Involved</h3>
+        <ul>
+          <li>India (under British colonial rule)</li>
+          <li>United Kingdom</li>
+        </ul>
+      
+        <h3>Strategic Tactics Used</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Side</th>
+              <th>Tactics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Indian National Congress</strong></td>
+              <td>Mass protests, civil disobedience, underground radio stations, student and worker mobilization</td>
+            </tr>
+            <tr>
+              <td><strong>British Raj</strong></td>
+              <td>Preemptive arrests (entire INC leadership), media blackout, police crackdowns, intelligence-led suppression</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <blockquote>
+          Despite no central command (due to arrests), the decentralized chaos acted like a DDoS attack on British control—uncoordinated but overwhelming.
+        </blockquote>
+      
+        <h3>Cyber Equivalent</h3>
+        <ul>
+          <li><strong>Congress = Botnet swarm</strong> — Leaderless bursts of protest, clogging up systems</li>
+          <li><strong>British = Intrusion Prevention System</strong> — Overloaded by sheer volume, despite preemptive actions</li>
+        </ul>
+      
+        <h3>Intel/Recon Methods</h3>
+        <ul>
+          <li>Surveillance on INC leaders</li>
+          <li>Monitoring underground press and pamphlets</li>
+          <li>Using local collaborators and loyalists for crowd control</li>
+        </ul>
+      
+        <h3>Cyber Mapping</h3>
+        <ul>
+          <li>Movement resembled <strong>peer-to-peer (P2P) insurgency</strong>, operating even with core nodes offline</li>
+          <li>British response = <strong>emergency patching + access restriction</strong>, but patches couldn’t stop the spread</li>
+        </ul>
+      
+        <blockquote>
+          “Do or Die” was less a command, more a viral payload — everyone who heard it became a node in the resistance.
+        </blockquote>
+      
+        <h3>Outcome/Impact</h3>
+        <ul>
+          <li>Short-term suppression, but long-term gain in nationalist momentum</li>
+          <li>International sympathy, particularly from the U.S.</li>
+          <li>Set the stage for post-war negotiations on independence</li>
+        </ul>
+      
+        <p><a href="/blog/">← Back to all posts</a></p>
+      </article>
+      <!--Content ends here-->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 The Stack Journal. Licensed under 
+            <a href="https://opensource.org/licenses/MIT">MIT</a> and 
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
